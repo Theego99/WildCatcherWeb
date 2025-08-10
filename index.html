@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,134 +10,145 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="icon" href="assets\icon.png" sizes="any">
+  <link rel="icon" type="image/png" href="assets\icon.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets\icon.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets\icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0c2217">
 
 </head>
+
 <body class="bg-deep">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark-forest sticky-top border-bottom border-teal">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-      <img src="assets/logo.png" alt="WildCatcher" width="40" height="40" class="rounded-circle bg-teal p-1">
-      <span class="fw-bold">WildCatcher</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="nav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" href="index.html#features">特徴</a></li>
-        <li class="nav-item"><a class="nav-link" href="docs.html">ドキュメント</a></li>
-        <li class="nav-item"><a class="nav-link" href="download.html">ダウンロード</a></li>
-        <li class="nav-item ms-lg-3"><a class="btn btn-teal" href="download.html">今すぐ入手</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="overlay"></div>
-  <div class="container position-relative text-center text-lg-start">
-    <div class="row align-items-center">
-      <div class="col-lg-6 py-5">
-        <div class="badge bg-teal text-dark-forest mb-3">野生動物 × AI × 現場運用</div>
-        <h1 class="display-5 fw-800 lh-sm">WildCatcher</h1>
-        <p class="lead opacity-75">
-          画像・動画から<strong>人/車/動物</strong>を自動検出。<br>
-          ベストフレーム保存、タグでファイル名を自動リネーム、<br>GUIで誰でも簡単に運用できます。
-        </p>
-        <div class="d-flex gap-3 flex-wrap">
-          <a class="btn btn-lg btn-teal" href="download.html">ダウンロード</a>
-          <a class="btn btn-lg btn-outline-light" href="docs.html">ドキュメント</a>
-        </div>
-        <div class="mt-4 small text-teal">
-          HALイベントウイーク（HAL東京）<span class="text-teal fw-bold">最多得票・最優秀賞</span> 受賞<br>
-          NHK「ダーウィンが来た！」と利用合意 / やまねこ稲作研究所で継続運用中
-        </div>
-      </div>
-      <div class="col-lg-6 py-5">
-        <div id="scrCarousel" class="carousel slide rounded-4 shadow-lg overflow-hidden border border-teal" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active"><img src="assets/ai-processing.png" class="d-block w-100" alt="AI processing"></div>
-            <div class="carousel-item"><img src="assets/settings.png" class="d-block w-100" alt="Settings"></div>
-            <div class="carousel-item"><img src="assets/sample.jpg" class="d-block w-100" alt="Language"></div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#scrCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#scrCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-forest sticky-top border-bottom border-teal">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="assets/logo.png" alt="WildCatcher" width="40" height="40" class="rounded-circle bg-teal p-1">
+        <span class="fw-bold">WildCatcher</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html#features">特徴</a></li>
+          <li class="nav-item"><a class="nav-link" href="docs.html">ドキュメント</a></li>
+          <li class="nav-item"><a class="nav-link" href="download.html">ダウンロード</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-teal" href="download.html">今すぐ入手</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</header>
+  </nav>
 
-<section id="features" class="py-5">
-  <div class="container">
-    <h2 class="h3 mb-4 fw-bold">主な特徴</h2>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="card lift border-teal h-100">
-          <div class="card-body">
-            <h3 class="h5">AI自動検出</h3>
-            <p class="mb-0">YOLOv5 + PyTorchで人/車/動物を検出。しきい値やフレーム間隔をGUIで調整。</p>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="container position-relative text-center text-lg-start">
+      <div class="row align-items-center">
+        <div class="col-lg-6 py-5">
+          <div class="badge bg-teal text-dark-forest mb-3">野生動物 × AI × 現場運用</div>
+          <h1 class="display-5 fw-800 lh-sm">WildCatcher</h1>
+          <p class="lead opacity-75">
+            画像・動画から<strong>人/車/動物</strong>を自動検出。<br>
+            ベストフレーム保存、タグでファイル名を自動リネーム、<br>GUIで誰でも簡単に運用できます。
+          </p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a class="btn btn-lg btn-teal" href="download.html">ダウンロード</a>
+            <a class="btn btn-lg btn-outline-light" href="docs.html">ドキュメント</a>
+          </div>
+          <div class="mt-4 small text-teal">
+            HALイベントウイーク（HAL東京）<span class="text-teal fw-bold">最多得票・最優秀賞</span> 受賞<br>
+            NHK「ダーウィンが来た！」と利用合意 / やまねこ稲作研究所で継続運用中
           </div>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card lift border-teal h-100">
-          <div class="card-body">
-            <h3 class="h5">メディア整理を自動化</h3>
-            <p class="mb-0">ベスト/全検出フレーム保存、クロップ作成、タグで自動リネーム、未検出削除など。</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card lift border-teal h-100">
-          <div class="card-body">
-            <h3 class="h5">動画プレーヤー</h3>
-            <p class="mb-0">VLC連携で再生・速度変更・前後移動・その場リネームをサポート。</p>
+        <div class="col-lg-6 py-5">
+          <div id="scrCarousel" class="carousel slide rounded-4 shadow-lg overflow-hidden border border-teal"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active"><img src="assets/ai-processing.png" class="d-block w-100"
+                  alt="AI processing"></div>
+              <div class="carousel-item"><img src="assets/settings.png" class="d-block w-100" alt="Settings"></div>
+              <div class="carousel-item"><img src="assets/sample.jpg" class="d-block w-100" alt="Language"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#scrCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#scrCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </header>
 
-<section class="py-5 bg-dark-forest border-y-teal">
-  <div class="container">
-    <div class="row align-items-center g-4">
-      <div class="col-lg-2 text-center text-lg-start">
-        <img src="assets/logo.png" alt="WildCatcher logo" class="logo-lg">
-      </div>
-      <div class="col-lg-10">
-        <h3 class="h4 fw-bold mb-2">現場で使える、保全テック</h3>
-        <p class="mb-0">対馬のツシマヤマネコの保全活動をきっかけに開発。<br class="d-none d-md-inline">研究・制作現場のワークフローを短縮し、次の一歩を後押しします。</p>
+  <section id="features" class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-4 fw-bold">主な特徴</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card lift border-teal h-100">
+            <div class="card-body">
+              <h3 class="h5">AI自動検出</h3>
+              <p class="mb-0">YOLOv5 + PyTorchで人/車/動物を検出。しきい値やフレーム間隔をGUIで調整。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card lift border-teal h-100">
+            <div class="card-body">
+              <h3 class="h5">メディア整理を自動化</h3>
+              <p class="mb-0">ベスト/全検出フレーム保存、クロップ作成、タグで自動リネーム、未検出削除など。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card lift border-teal h-100">
+            <div class="card-body">
+              <h3 class="h5">動画プレーヤー</h3>
+              <p class="mb-0">VLC連携で再生・速度変更・前後移動・その場リネームをサポート。</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="py-5">
-  <div class="container text-center">
-    <h3 class="h4 fw-bold mb-3">今すぐ使ってみる</h3>
-    <a class="btn btn-lg btn-teal" href="download.html">ダウンロード</a>
-  </div>
-</section>
-
-<footer class="py-5 bg-dark-forest border-top border-teal mt-5">
-  <div class="container d-flex flex-wrap justify-content-between align-items-center">
-    <div class="small text-teal">© 2025 WildCatcher</div>
-    <div class="d-flex gap-3 small">
-      <a class="link-teal" href="docs.html">ドキュメント</a>
-      <a class="link-teal" href="download.html">ダウンロード</a>
+  <section class="py-5 bg-dark-forest border-y-teal">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-2 text-center text-lg-start">
+          <img src="assets/logo.png" alt="WildCatcher logo" class="logo-lg">
+        </div>
+        <div class="col-lg-10">
+          <h3 class="h4 fw-bold mb-2">現場で使える、保全テック</h3>
+          <p class="mb-0">対馬のツシマヤマネコの保全活動をきっかけに開発。<br class="d-none d-md-inline">研究・制作現場のワークフローを短縮し、次の一歩を後押しします。</p>
+        </div>
+      </div>
     </div>
-  </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
+  </section>
+
+  <section class="py-5">
+    <div class="container text-center">
+      <h3 class="h4 fw-bold mb-3">今すぐ使ってみる</h3>
+      <a class="btn btn-lg btn-teal" href="download.html">ダウンロード</a>
+    </div>
+  </section>
+
+  <footer class="py-5 bg-dark-forest border-top border-teal mt-5">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <div class="small text-teal">© 2025 WildCatcher</div>
+      <div class="d-flex gap-3 small">
+        <a class="link-teal" href="docs.html">ドキュメント</a>
+        <a class="link-teal" href="download.html">ダウンロード</a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
+
 </html>
