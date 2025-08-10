@@ -1,0 +1,69 @@
+:root {
+  --deep: #07150f;
+  --forest: #0c2217;
+  --teal: #2dd4bf;
+  --teal-600: #14b8a6;
+  --teal-200: #99f6e4;
+  --accent: #ff9800;
+  --text: #e9f2ec;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { color: var(--text); background: var(--deep); font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif; }
+
+.bg-deep { background: var(--deep); }
+.bg-dark-forest { background: var(--forest); }
+.bg-teal { background: var(--teal); }
+.text-teal { color: var(--teal); }
+.link-teal { color: var(--teal); text-decoration: none; }
+.link-teal:hover { text-decoration: underline; }
+.border-teal { border-color: var(--teal) !important; }
+.border-y-teal { border-top: 1px solid var(--teal); border-bottom: 1px solid var(--teal); }
+
+.btn-teal {
+  background: var(--teal);
+  color: var(--forest);
+  border: none;
+  font-weight: 700;
+}
+.btn-teal:hover { background: var(--teal-600); color: var(--forest); }
+
+.badge.bg-teal { color: var(--forest) !important; }
+
+.hero {
+  background: radial-gradient(1200px 400px at 20% -10%, rgba(45,212,191,0.12), transparent),
+              linear-gradient(160deg, rgba(45,212,191,0.08), transparent 60%),
+              var(--deep);
+  padding: 3rem 0 1rem;
+}
+.hero .overlay { position: absolute; inset: 0; pointer-events: none; }
+
+.logo-lg { width: 96px; height: auto; filter: drop-shadow(0 6px 24px rgba(0,0,0,.4)); }
+
+.card.lift { background: rgba(12,34,23,.6); transition: transform .2s ease, box-shadow .2s ease; }
+.card.lift:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,.35); }
+
+.navbar-dark .navbar-nav .nav-link { color: #d7f3ec; }
+.navbar-dark .navbar-nav .nav-link:hover { color: var(--teal); }
+.navbar-dark .navbar-brand { color: #fff; }
+
+.pdf-frame { background: #000; }
+
+/* small utilities */
+.fw-800 { font-weight: 800; }
+
+/* === Contrast fix for Features cards === */
+#features .card.lift { 
+  background: rgba(12, 34, 23, 0.92);
+  border-color: var(--teal);
+}
+#features .card.lift, 
+#features .card.lift .card-body, 
+#features .card.lift h3, 
+#features .card.lift .h5,
+#features .card.lift p {
+  color: var(--text) !important;
+}
+#features .card.lift p { opacity: .98; }
+/* ====================================== */
