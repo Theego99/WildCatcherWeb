@@ -12,11 +12,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <!-- Icons -->
   <link rel="icon" href="assets\icon.png" sizes="any">
-  <link rel="icon" type="image/png" href="assets\icon.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="assets\icon.png" sizes="16x16">
-  <link rel="apple-touch-icon" href="assets\icon.png">
-  <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#0c2217">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="assets/favicon-48.png" sizes="48x48">
+  <link rel="apple-touch-icon" href="assets/favicon-180.png">
+  <link rel="manifest" href="site.webmanifest">
 
 </head>
 
@@ -32,9 +32,7 @@
       </button>
       <div id="nav" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="index.html#features">特徴</a></li>
           <li class="nav-item"><a class="nav-link" href="docs.html">ドキュメント</a></li>
-          <li class="nav-item"><a class="nav-link" href="download.html">ダウンロード</a></li>
           <li class="nav-item ms-lg-3"><a class="btn btn-teal" href="download.html">今すぐ入手</a></li>
         </ul>
       </div>
@@ -49,8 +47,8 @@
           <div class="badge bg-teal text-dark-forest mb-3">野生動物 × AI × 現場運用</div>
           <h1 class="display-5 fw-800 lh-sm">WildCatcher</h1>
           <p class="lead opacity-75">
-            画像・動画から<strong>人/車/動物</strong>を自動検出。<br>
-            ベストフレーム保存、タグでファイル名を自動リネーム、<br>GUIで誰でも簡単に運用できます。
+            画像・動画から<strong>「人・車・動物」</strong>を自動検出。<br>
+            カラ打ちを削除、タグでファイル名を自動リネーム、<br>GUIで誰でも簡単に運用できます。
           </p>
           <div class="d-flex gap-3 flex-wrap">
             <a class="btn btn-lg btn-teal" href="download.html">ダウンロード</a>
@@ -58,7 +56,7 @@
           </div>
           <div class="mt-4 small text-teal">
             HALイベントウイーク（HAL東京）<span class="text-teal fw-bold">最多得票・金賞</span> 受賞<br>
-            NHK「ダーウィンが来た！」と利用合意 / 佐護ヤマネコ稲作研究会で継続運用中
+            NHK「ダーウィンが来た！」に導入済み / 佐護ヤマネコ稲作研究会で継続運用中
           </div>
         </div>
         <div class="col-lg-6 py-5">
@@ -107,8 +105,8 @@
         <div class="col-md-6 col-lg-4">
           <div class="card lift border-teal h-100">
             <div class="card-body">
-              <h3 class="h5">動画プレーヤー</h3>
-              <p class="mb-0">VLC連携で再生・速度変更・前後移動・その場リネームをサポート。</p>
+              <h3 class="h5">手動動画処理ツール</h3>
+              <p class="mb-0">VLC連携で再生・速度変更・前後移動・ファイル名変更などで動画の管理を更に速く。</p>
             </div>
           </div>
         </div>
@@ -116,38 +114,110 @@
     </div>
   </section>
 
-  <section class="py-5 bg-dark-forest border-y-teal">
+  <section id="how" class="py-5 bg-dark-forest border-y-teal">
     <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-2 text-center text-lg-start">
-          <img src="assets/logo.png" alt="WildCatcher logo" class="logo-lg">
+      <h3 class="h4 fw-bold mb-3">使い方 — 現場で使える3ステップ</h3>
+      <div class="how-grid">
+        <div class="how-card">
+          <img src="assets/gatherdata.png" alt="Step 1">
+          <h4>ステップ 1 — データを集める</h4>
+          <p>カメラトラップやドローンで撮影した動画・画像をフォルダにまとめます。WildCatcherは複数フォルダのバッチ処理に対応。</p>
         </div>
-        <div class="col-lg-10">
-          <h3 class="h4 fw-bold mb-2">現場で使える、保全テック</h3>
-          <p class="mb-0">対馬のツシマヤマネコの保全活動をきっかけに開発。<br class="d-none d-md-inline">研究・制作現場のワークフローを短縮し、次の一歩を後押しします。</p>
+        <div class="how-card">
+          <img src="assets/ai-processing.png" alt="Step 2">
+          <h4>ステップ 2 — 設定する</h4>
+          <p>フレーム間隔、しきい値、対象クラス（動物/人/車）をGUIから調整。現場例に基づく推奨設定もドキュメントに掲載。</p>
         </div>
+        <div class="how-card">
+          <img src="assets/sample.jpg" alt="Step 3">
+          <h4>ステップ 3 — 実行して解析</h4>
+          <p>解析結果は自動保存・自動リネーム。ログ/レポートも自動生成されます。</p>
+        </div>
+      </div>
+      <div class="mt-4 text-center">
+        <a class="btn btn-teal" href="download.html">今すぐ入手</a>
+        <a class="btn btn-link text-teal" href="docs.html">詳しい使い方（ドキュメント）</a>
       </div>
     </div>
   </section>
 
-  <section class="py-5">
-    <div class="container text-center">
-      <h3 class="h4 fw-bold mb-3">今すぐ使ってみる</h3>
-      <a class="btn btn-lg btn-teal" href="download.html">ダウンロード</a>
+  <section id="showcase" class="py-5 bg-dark-forest border-y-teal">
+    <div class="container">
+      <h3 class="h4 fw-bold mb-4">導入・掲載実績</h3>
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="card lift h-100 border-teal showcase-card">
+            <div class="card-body">
+              <h4 class="h5 mb-2">
+                <span class="logo-tile"><img src="assets/yamanekokai.png" alt="佐護ヤマネコ稲作研究会"></span>
+                <span>佐護ヤマネコ稲作研究会</span>
+              </h4>
+              <p class="mb-2 desc">ツシマヤマネコの生息域での映像解析・データ整理のために現場運用中。</p>
+              <span class="badge bg-teal">現場導入</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card lift h-100 border-teal showcase-card">
+            <div class="card-body">
+              <h4 class="h5 mb-2">
+                <span class="logo-tile"><img src="assets/nhklogo.png" alt="NHK"></span>
+                <span>NHK ワークフロー</span>
+              </h4>
+              <p class="mb-2 desc">「ダーウィンが来た！」制作フローに導入・活用中。</p>
+              <span class="badge bg-teal">導入</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card lift h-100 border-teal showcase-card">
+            <div class="card-body">
+              <h4 class="h5 mb-2">
+                <span class="logo-tile"><img src="assets/darwingakita.jpg" alt="ダーウィンが来た！"></span>
+                <span>ダーウィンが来た！番組掲載</span>
+              </h4>
+              <p class="mb-2 desc">「ツシマヤマネコ特集（泳ぐ！狩る！日本の宝）」でWildCatcherが紹介されました。</p>
+              <span class="badge bg-teal">メディア掲載</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card lift h-100 border-teal showcase-card">
+            <div class="card-body">
+              <h4 class="h5 mb-2">
+                <span class="logo-tile"><img src="assets/u22.png" alt="U22コンテスト"></span>
+                <span>U22 プログラミング・コンテスト</span>
+              </h4>
+              <p class="mb-2 desc">一次審査通過。</p>
+              <span class="badge bg-teal">アワード</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="small mt-3 text-teal">※ロゴ・商標は各団体に帰属します。事例詳細は取材・広報用に提供可能です。</div>
     </div>
   </section>
 
-  <footer class="py-5 bg-dark-forest border-top border-teal mt-5">
+
+  <footer class="py-5 bg-dark-forest border-top border-y-teal mt-5">
     <div class="container d-flex flex-wrap justify-content-between align-items-center">
       <div class="small text-teal">© 2025 WildCatcher</div>
-      <div class="d-flex gap-3 small">
-        <a class="link-teal" href="docs.html">ドキュメント</a>
-        <a class="link-teal" href="download.html">ダウンロード</a>
+      <div class="d-flex flex-column text-end small">
+        <span>開発者：<strong>Diego Alonso Cañizares</strong></span>
+        <div class="d-flex gap-3 justify-content-end">
+          <a class="link-teal" href="docs.html">ドキュメント</a>
+          <a class="link-teal" href="download.html">ダウンロード</a>
+        </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
 
 </body>
 
