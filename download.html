@@ -1,68 +1,243 @@
 <!doctype html>
 <html lang="ja">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WildCatcher</title>
+  <title>ダウンロード - WildCatcher</title>
+  <meta name="description" content="WildCatcher — AI-powered wildlife, human and vehicle detection toolkit. Created by Diego Alonso Cañizares.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <!-- Icons -->
-  <link rel="icon" href="assets\icon.png" sizes="any">
-  <meta name="theme-color" content="#0c2217">
-  <link rel="icon" href="assets/favicon-32.png" sizes="32x32">
-  <link rel="icon" href="assets/favicon-48.png" sizes="48x48">
-  <link rel="apple-touch-icon" href="assets/favicon-180.png">
-  <link rel="manifest" href="site.webmanifest">
-
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;800&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="icon" href="assets/icon.png" sizes="any">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <meta name="theme-color" content="#0a1f15">
 </head>
 
-<body class="bg-deep">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-forest sticky-top border-bottom border-teal">
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-        <img src="assets/logo.png" alt="WildCatcher" width="40" height="40" class="rounded-circle bg-teal p-1">
-        <span class="fw-bold">WildCatcher</span>
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.png" alt="WildCatcher" class="logo-img">
+        <span class="brand-text">WildCatcher</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div id="nav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">ホーム</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#features">特徴</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#advantages">優位性</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#ai-performance">AI性能</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#pricing">価格</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#showcase">導入実績</a></li>
           <li class="nav-item"><a class="nav-link" href="docs.html">ドキュメント</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-primary active" href="download.html">今すぐ入手</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <main class="container py-5">
-    <div class="text-center py-5 my-5">
-      <h1 class="h3 fw-bold mb-4">WildCatcher ダウンロード</h1>
-      <p class="mb-4">最新ビルドのZIPを取得できます。</p>
-      <a class="btn btn-lg btn-teal"
-        href="https://github.com/Theego99/WildCatcherWeb/releases/download/v2.0.0/WildCatcher_v2.zip">
-        ダウンロード（ZIP）
-      </a>
-    </div>
-  </main>
-  <footer class="py-5 bg-dark-forest border-top border-y-teal mt-5">
-    <div class="container d-flex flex-wrap justify-content-between align-items-center">
-      <div class="small text-teal">© 2025 WildCatcher</div>
-      <div class="d-flex flex-column text-end small">
-        <span>開発者：<strong>Diego Alonso Cañizares</strong></span>
-        <div class="d-flex gap-3 justify-content-end">
-          <a class="link-teal" href="docs.html">ドキュメント</a>
+  <main class="download-page">
+    <div class="container">
+      <div class="download-hero">
+        <div class="download-content">
+          <div class="badge-pill">評価版</div>
+          <h1>WildCatcher ダウンロード</h1>
+          <p class="lead">最新ビルドのZIPを取得できます。完全オフライン動作で、すぐに使い始められます。</p>
+          
+          <div class="download-card">
+            <div class="download-info">
+              <div class="download-version">
+                <h3>Version 2.0</h3>
+                <span class="version-badge">最新版</span>
+              </div>
+              <div class="download-details">
+                <div class="detail-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                  <div>
+                    <strong>対応OS</strong>
+                    <p>Windows 10/11, macOS (Intel/Apple Silicon)</p>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                  </svg>
+                  <div>
+                    <strong>ファイル形式</strong>
+                    <p>ZIP アーカイブ</p>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                  <div>
+                    <strong>SHA256</strong>
+                    <p class="hash">公開ビルドに合わせて更新</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="download-action">
+              <a class="btn btn-primary btn-lg download-btn" href="https://github.com/Theego99/WildCatcherWeb/releases/download/v2.0.0/WildCatcher_v2.zip">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                ダウンロード (ZIP)
+              </a>
+              <p class="download-note">ダウンロード後、解凍してすぐにご利用いただけます</p>
+            </div>
+          </div>
+
+          <div class="features-quick-list">
+            <h3>主な機能</h3>
+            <div class="quick-features">
+              <div class="quick-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>AI自動検出 (人/車/動物)</span>
+              </div>
+              <div class="quick-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>完全オフライン動作</span>
+              </div>
+              <div class="quick-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>メディア整理自動化</span>
+              </div>
+              <div class="quick-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>統合動画プレーヤー</span>
+              </div>
+              <div class="quick-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>種判別モデル (近日実装)</span>
+              </div>
+              <div class="quick-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>カスタムモデル対応</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="system-requirements">
+            <h3>推奨システム要件</h3>
+            <div class="requirements-grid">
+              <div class="requirement-item">
+                <strong>OS</strong>
+                <p>Windows 10 (64-bit) 以降<br>macOS 11.0 以降</p>
+              </div>
+              <div class="requirement-item">
+                <strong>プロセッサ</strong>
+                <p>Intel Core i5 以上<br>Apple M1 以上推奨</p>
+              </div>
+              <div class="requirement-item">
+                <strong>メモリ</strong>
+                <p>8GB RAM 以上<br>(16GB 推奨)</p>
+              </div>
+              <div class="requirement-item">
+                <strong>ストレージ</strong>
+                <p>500MB 以上の空き容量<br>(データ保存用に追加容量必要)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="getting-started">
+            <h3>使い始めるには</h3>
+            <ol class="start-steps">
+              <li>
+                <strong>ダウンロード</strong>
+                <p>上記のボタンからZIPファイルをダウンロード</p>
+              </li>
+              <li>
+                <strong>解凍</strong>
+                <p>ダウンロードしたZIPファイルを解凍</p>
+              </li>
+              <li>
+                <strong>起動</strong>
+                <p>WildCatcherアプリケーションを起動</p>
+              </li>
+              <li>
+                <strong>設定</strong>
+                <p>初回起動時に基本設定を行い、すぐに使用開始</p>
+              </li>
+            </ol>
+            <a href="docs.html" class="btn btn-outline-primary">詳しい使い方を見る</a>
+          </div>
+
+          <div class="creator-info">
+            <p><strong>Creator / 開発者:</strong> Diego Alonso Cañizares</p>
+          </div>
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="WildCatcher" class="footer-logo">
+          <h3>WildCatcher</h3>
+          <p>完全オフライン動作のAI野生動物調査ソフトウェア</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>製品</h4>
+            <ul>
+              <li><a href="index.html#features">特徴</a></li>
+              <li><a href="index.html#advantages">優位性</a></li>
+              <li><a href="index.html#ai-performance">AI性能</a></li>
+              <li><a href="index.html#pricing">価格</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>リソース</h4>
+            <ul>
+              <li><a href="docs.html">ドキュメント</a></li>
+              <li><a href="download.html">ダウンロード</a></li>
+              <li><a href="index.html#showcase">導入実績</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>開発者</h4>
+            <ul>
+              <li><strong>Diego Alonso Cañizares</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 WildCatcher. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>
