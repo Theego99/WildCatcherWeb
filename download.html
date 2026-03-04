@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;800&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <link href="css/styles.css?v=2.1" rel="stylesheet">
+  <link href="css/styles.css?v=2.2" rel="stylesheet">
  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
@@ -50,9 +50,9 @@
     <div class="container">
       <div class="download-hero">
         <div class="download-content">
-          <div class="badge-pill">評価版</div>
+          <div class="badge-pill deprecated-badge">⚠️ 旧ベータ版アーカイブ</div>
           <h1>WildCatcher ダウンロード</h1>
-          <p class="lead">最新ビルドのZIPを取得できます。完全オフライン動作で、すぐに使い始められます。</p>
+          <p class="lead" style="color: #f0a500;">このページでは旧ベータ版のみ配布しています。最新版のご利用には、開発者へ直接お問い合わせください。</p>
           
           <!-- License Notice -->
           <div class="license-notice">
@@ -81,11 +81,36 @@
             </div>
           </div>
           
-          <div class="download-card">
+          <!-- DEPRECATED WARNING -->
+          <div class="deprecated-warning-box">
+            <div class="dep-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <div class="dep-content">
+              <h3>このバージョンは非推奨です</h3>
+              <p>下記のダウンロードは<strong>旧ベータ版</strong>です。現在は大幅に機能強化された新バージョンが稼働中ですが、直接配布はしておりません。</p>
+              <p><strong>最新版をご希望の場合は、開発者へ直接ご連絡ください：</strong></p>
+              <a href="mailto:diegoalonsojapan@gmail.com" class="btn btn-primary btn-lg dep-contact-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                diegoalonsojapan@gmail.com へ問い合わせる
+              </a>
+              <p class="dep-note">最新版では：種判別モデル18種・95%+精度、GPUアクセラレーション、CSV分析レポート、フォルダ構造ミラーリング、などが利用可能です。</p>
+            </div>
+          </div>
+
+
+          <div class="download-card deprecated-card">
             <div class="download-info">
               <div class="download-version">
                 <h3>Version 2.0</h3>
-                <span class="version-badge">最新版</span>
+                <span class="version-badge" style="background: #5a3a00; color: #f0a500; border: 1px solid #f0a500;">旧ベータ版</span>
               </div>
               <div class="download-details">
                 <div class="detail-item">
@@ -123,15 +148,15 @@
             </div>
             
             <div class="download-action">
-              <a class="btn btn-primary btn-lg download-btn" href="https://github.com/Theego99/WildCatcherWeb/releases/download/v2.0.0/WildCatcher_v2.zip">
+              <a class="btn btn-deprecated-dl btn-lg download-btn" href="https://github.com/Theego99/WildCatcherWeb/releases/download/v2.0.0/WildCatcher_v2.zip">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                   <polyline points="7 10 12 15 17 10"/>
                   <line x1="12" y1="15" x2="12" y2="3"/>
                 </svg>
-                ダウンロード (ZIP)
+                ⚠️ 旧ベータ版をダウンロード (ZIP)
               </a>
-              <p class="download-note">評価版をダウンロード後、ライセンス取得のお問い合わせをお願いします</p>
+              <p class="download-note" style="color: #f0a500; font-weight: 600;">※ これは廃止された旧ベータ版です。最新版は <a href="mailto:diegoalonsojapan@gmail.com" style="color: #f0a500; text-decoration: underline;">開発者へ直接お問い合わせ</a> ください。</p>
             </div>
           </div>
 

@@ -124,8 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const animateProgressRing = (ring) => {
     const circumference = 2 * Math.PI * 54; // radius is 54
-    const percent = 80; // 80% accuracy
-    const offset = circumference - (percent / 100) * circumference;
+    const percent = 95; // 95%+ accuracy
+    const offset = circumference - (percent / 100) * circumference; // ~16.96 for 95%
     
     ring.style.strokeDasharray = `${circumference} ${circumference}`;
     ring.style.strokeDashoffset = circumference;
@@ -401,6 +401,45 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('%cWildCatcher', 'font-size: 24px; font-weight: bold; color: #3dd68c;');
   console.log('%c完全オフライン動作のAI野生動物調査ソフトウェア', 'font-size: 14px; color: #b8cec2;');
   console.log('%cCreated by Diego Alonso Cañizares', 'font-size: 12px; color: #8fa89d;');
+
+
+
+  // ==========================================
+  // Stats Banner Counter Animation
+  // ==========================================
+  const statBannerValues = document.querySelectorAll('.stat-banner-value');
+
+  const animateStatBanner = (el) => {
+    const text = el.textContent.trim();
+    const num = parseFloat(text);
+    if (isNaN(num)) return;
+    const suffix = text.replace(String(num), '').replace(num.toString(), '');
+    const duration = 1400;
+    const steps = 50;
+    const step = num / steps;
+    let current = 0;
+    let count = 0;
+    const timer = setInterval(() => {
+      count++;
+      current = Math.min(current + step, num);
+      el.textContent = (Number.isInteger(num) ? Math.round(current) : current.toFixed(0)) + suffix;
+      if (count >= steps) {
+        el.textContent = text; // restore original including any +
+        clearInterval(timer);
+      }
+    }, duration / steps);
+  };
+
+  const bannerObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !entry.target.dataset.counted) {
+        entry.target.dataset.counted = 'true';
+        animateStatBanner(entry.target);
+      }
+    });
+  }, { threshold: 0.8 });
+
+  statBannerValues.forEach(el => bannerObserver.observe(el));
 
   // ==========================================
   // Initial Animations

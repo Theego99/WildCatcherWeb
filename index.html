@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;800&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <link href="css/styles.css?v=2.1" rel="stylesheet">
+  <link href="css/styles.css?v=2.2" rel="stylesheet">
  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
@@ -134,6 +134,46 @@
     </div>
   </header>
 
+
+  <!-- Stats Banner - xnatura inspired -->
+  <section class="stats-banner">
+    <div class="container">
+      <div class="stats-marquee-wrapper">
+        <div class="stats-row">
+          <div class="stat-banner-item">
+            <span class="stat-banner-value">95%+</span>
+            <span class="stat-banner-label">種判別精度</span>
+          </div>
+          <div class="stat-divider">·</div>
+          <div class="stat-banner-item">
+            <span class="stat-banner-value">18</span>
+            <span class="stat-banner-label">対応種数</span>
+          </div>
+          <div class="stat-divider">·</div>
+          <div class="stat-banner-item">
+            <span class="stat-banner-value">100%</span>
+            <span class="stat-banner-label">オフライン動作</span>
+          </div>
+          <div class="stat-divider">·</div>
+          <div class="stat-banner-item">
+            <span class="stat-banner-value">99%+</span>
+            <span class="stat-banner-label">人間検出精度</span>
+          </div>
+          <div class="stat-divider">·</div>
+          <div class="stat-banner-item">
+            <span class="stat-banner-value">5+</span>
+            <span class="stat-banner-label">言語対応</span>
+          </div>
+          <div class="stat-divider">·</div>
+          <div class="stat-banner-item">
+            <span class="stat-banner-value">GPU</span>
+            <span class="stat-banner-label">CUDA/MPS加速</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="features" class="section">
     <div class="container">
       <div class="section-header">
@@ -192,7 +232,7 @@
             </svg>
           </div>
           <h3 class="feature-title">種判別モデル搭載</h3>
-          <p class="feature-description">日本の森林・山岳域に生息する主要12種を自動分類。近日実装予定で、さらなる作業効率化を実現。</p>
+          <p class="feature-description">日本の森林・山岳域に生息する主要18種を自動分類。汎用モデル(95%+精度)、シカ/クマ特化バイナリモデル、カスタムモデルに対応。</p>
         </div>
         <div class="feature-card animate-on-scroll">
           <div class="feature-icon">
@@ -291,7 +331,7 @@
         <div class="performance-card animate-on-scroll">
           <div class="performance-header">
             <h3>種判別モデル</h3>
-            <div class="badge-pill small">近日実装予定</div>
+            <div class="badge-pill small" style="background: linear-gradient(135deg, #3dd68c, #2bb376); color: #0a1f15;">実装済み・稼働中</div>
           </div>
           <div class="species-info">
             <div class="species-accuracy">
@@ -299,17 +339,17 @@
                 <svg viewBox="0 0 120 120">
                   <circle cx="60" cy="60" r="54" fill="none" stroke="#1a3428" stroke-width="8"/>
                   <circle cx="60" cy="60" r="54" fill="none" stroke="var(--accent)" stroke-width="8" 
-                          stroke-dasharray="339.292" stroke-dashoffset="67.858" 
+                          stroke-dasharray="339.292" stroke-dashoffset="16.965" 
                           transform="rotate(-90 60 60)" class="progress-ring"/>
                 </svg>
                 <div class="accuracy-text">
-                  <span class="accuracy-value">80%</span>
+                  <span class="accuracy-value">95%+</span>
                   <span class="accuracy-label">分類精度</span>
                 </div>
               </div>
             </div>
             <div class="species-list">
-              <h4>対応動物グループ (12種)</h4>
+              <h4>対応動物グループ (18種)</h4>
               <div class="species-tags">
                 <span class="species-tag">シカ類</span>
                 <span class="species-tag">イノシシ</span>
@@ -323,8 +363,34 @@
                 <span class="species-tag">クマ</span>
                 <span class="species-tag">鳥類</span>
                 <span class="species-tag">ネズミ科</span>
+                <span class="species-tag">ノウサギ</span>
+                <span class="species-tag">テン</span>
+                <span class="species-tag">ハクビシン</span>
+                <span class="species-tag">アナグマ</span>
+                <span class="species-tag">オオカミ科</span>
+                <span class="species-tag">その他哺乳類</span>
               </div>
-              <p class="species-note">日本の森林・山岳域に生息する主要種を網羅。現在さらなる精度向上を開発中。</p>
+              <p class="species-note">日本の森林・山岳域に生息する主要18種を網羅。汎用モデルで95%以上の分類精度を実現。</p>
+              <div class="model-types-grid">
+                <div class="model-type-card model-general">
+                  <div class="model-type-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                  </div>
+                  <div>
+                    <h5>汎用モデル（標準搭載）</h5>
+                    <p>95%+ 精度 — 18種を一括分類。すぐに使えます。</p>
+                  </div>
+                </div>
+                <div class="model-type-card model-binary">
+                  <div class="model-type-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                  </div>
+                  <div>
+                    <h5>バイナリモデル（同梱）</h5>
+                    <p>シカ vs その他 ／ クマ vs その他 など、特定種に特化した高精度モデルも付属。</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -335,7 +401,7 @@
             <div class="badge-pill small">オプションサービス</div>
           </div>
           <div class="custom-model-content">
-            <p>野生動物の出現種や写り方は地域ごとに大きく異なります。WildCatcherでは、利用環境に特化したカスタム分類モデルの導入が可能です。</p>
+            <p>標準搭載モデルに加え、調査環境に完全特化したカスタムモデルの開発を<strong>フルリサーチプロジェクト</strong>として受注可能。バイオーム・季節・背景・地域固有種など、あらゆる条件に合わせたモデルをゼロから設計・構築します。</p>
             <div class="custom-options">
               <div class="custom-option">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -369,11 +435,12 @@
               </div>
             </div>
             <div class="custom-future">
-              <h5>将来提供予定</h5>
+              <h5>フルリサーチプロジェクトに含まれるもの</h5>
               <ul>
-                <li>AIに関する専門知識不要の専用アプリケーション</li>
+                <li>調査地・バイオーム・季節・背景環境の分析</li>
+                <li>地域固有種・外来種に特化したデータ収集と学習</li>
                 <li>データ投入→学習→評価→組み込みまでの一貫フロー</li>
-                <li>現場担当者向けデータ収集ベストプラクティス講習</li>
+                <li>現場担当者向けデータ収集・運用ベストプラクティス講習</li>
               </ul>
             </div>
           </div>
@@ -403,7 +470,7 @@
             <li>AI自動検出機能</li>
             <li>メディア整理自動化</li>
             <li>統合動画プレーヤー</li>
-            <li>種判別モデル (近日実装)</li>
+            <li>種判別モデル搭載 (18種・95%+精度)</li>
           </ul>
           <p class="pricing-note">サブスクリプション型ではなく、台数が増えてもコストが急増しない設計。</p>
         </div>
