@@ -1,301 +1,272 @@
 <!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ダウンロード - WildCatcher</title>
-  <meta name="description" content="WildCatcher — AI-powered wildlife, human and vehicle detection toolkit. Created by Diego Alonso Cañizares.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;800&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <link href="css/styles.css?v=2.2" rel="stylesheet">
- <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
-  <link rel="shortcut icon" href="assets/favicon-32.png">
-  <meta name="theme-color" content="#0a1f15">
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/logo.png" alt="WildCatcher" class="logo-img">
-        <span class="brand-text">WildCatcher</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="nav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">ホーム</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#features">特徴</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#advantages">優位性</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#ai-performance">AI性能</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#pricing">価格</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#showcase">導入実績</a></li>
-          <li class="nav-item"><a class="nav-link" href="docs.html">ドキュメント</a></li>
-          <li class="nav-item ms-lg-3"><a class="btn btn-primary active" href="download.html">今すぐ入手</a></li>
-        </ul>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ダウンロード | WildCatcher 2.2.0 | Windows・Mac</title>
+    <meta
+      name="description"
+      content="WildCatcher 2.2.0のWindowsインストーラーとMac Apple Silicon・Intel版。14日間の無料トライアル、更新手順、ZIPとSHA-256をご案内します。"
+    />
+    <link rel="canonical" href="https://www.wildcatcher.jp/download.html" />
+    <meta name="theme-color" content="#10291f" />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/styles.css?v=20260912" />
+    <script src="js/main.js?v=20260912" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "WildCatcher",
+        "softwareVersion": "2.2.0",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Windows, macOS",
+        "url": "https://www.wildcatcher.jp/",
+        "downloadUrl": "https://www.wildcatcher.jp/download.html",
+        "publisher": {
+          "@type": "Organization",
+          "name": "合同会社ReCorta",
+          "url": "https://www.recorta.jp/"
+        }
+      }
+    </script>
+  </head>
+  <body class="product">
+    <a class="skip-link" href="#main">本文へ移動</a>
+    <header class="site-header">
+      <div class="wrap nav-wrap">
+        <a class="brand" href="index.html"
+          ><img src="assets/logo.png" alt="" width="36" height="36" /><span
+            >WildCatcher</span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="navigation"
+          aria-expanded="false"
+          hidden
+        >
+          メニュー
+        </button>
+        <nav id="navigation" aria-label="メインナビゲーション">
+          <a href="index.html">ホーム</a><a href="index.html#features">機能</a
+          ><a href="index.html#pricing">導入・料金</a
+          ><a href="docs.html">使い方</a
+          ><a href="download.html" aria-current="page">ダウンロード</a>
+        </nav>
       </div>
-    </div>
-  </nav>
-
-  <main class="download-page">
-    <div class="container">
-      <div class="download-hero">
-        <div class="download-content">
-          <div class="badge-pill deprecated-badge">⚠️ 旧ベータ版アーカイブ</div>
-          <h1>WildCatcher ダウンロード</h1>
-          <p class="lead" style="color: #f0a500;">このページでは旧ベータ版のみ配布しています。最新版のご利用には、開発者へ直接お問い合わせください。</p>
-          
-          <!-- License Notice -->
-          <div class="license-notice">
-            <div class="license-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="12" y1="16" x2="12" y2="12"/>
-                <line x1="12" y1="8" x2="12.01" y2="8"/>
-              </svg>
+    </header>
+    <main id="main">
+      <header class="page-intro wrap">
+        <p class="eyebrow">Downloads</p>
+        <h1>WildCatcher 2.2.0</h1>
+        <p class="lead">
+          2026年9月11日公開。お使いのPCに合う最新版をダウンロードしてください。
+        </p>
+      </header>
+      <section class="section">
+        <div class="wrap">
+          <div class="cards">
+            <article class="card download-card">
+              <h2 class="platform">Windows</h2>
+              <h3>64-bit / x64</h3>
+              <p class="small">約594 MB · インストーラー</p>
+              <a
+                class="button"
+                href="https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.0/WildCatcher_v2.2.0_Setup.exe"
+                >Windows版を入手<span aria-hidden="true"> →</span></a
+              >
+            </article>
+            <article class="card download-card">
+              <h2 class="platform">macOS</h2>
+              <h3>Apple Silicon / Mシリーズ</h3>
+              <p class="small">約728 MB · ディスクイメージ</p>
+              <a
+                class="button"
+                href="https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.0/WildCatcher-macOS-arm64.dmg"
+                >Apple Silicon版を入手<span aria-hidden="true"> →</span></a
+              >
+            </article>
+            <article class="card download-card">
+              <h2 class="platform">macOS</h2>
+              <h3>Intel</h3>
+              <p class="small">約845 MB · ディスクイメージ</p>
+              <a
+                class="button"
+                href="https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.0/WildCatcher-macOS-x64.dmg"
+                >Intel版を入手<span aria-hidden="true"> →</span></a
+              >
+            </article>
+          </div>
+          <p class="hero-note">
+            Windowsは64-bit版、Macは「このMacについて」でチップ／プロセッサをご確認ください。解凍・インストールと調査データの保存には、ダウンロード容量とは別に空き容量が必要です。
+          </p>
+          <div class="actions">
+            <a
+              class="button secondary"
+              href="https://github.com/Theego99/WildCatcher-releases/releases/latest"
+              >最新リリース・ZIP形式<span aria-hidden="true"> →</span></a
+            ><a
+              class="button secondary"
+              href="https://github.com/Theego99/WildCatcher-releases/releases/tag/v2.2.0"
+              >2.2.0の変更内容<span aria-hidden="true"> →</span></a
+            >
+          </div>
+          <div class="notice">
+            <h3>無料トライアルとライセンス</h3>
+            <p>
+              初回起動から14日間、処理量に上限のある無料トライアルをご利用いただけます。継続利用には有償ライセンスが必要です。種分類・PDFなどはプランにより利用範囲が異なります。
+            </p>
+            <a href="index.html#pricing">ライセンス構成と見積りについて →</a>
+          </div>
+        </div>
+      </section>
+      <section class="section alt">
+        <div class="wrap split">
+          <div>
+            <div class="section-head">
+              <p class="eyebrow">Install</p>
+              <h2>はじめて使う方へ。</h2>
             </div>
-            <div class="license-content">
-              <h3>ライセンスについて</h3>
-              <p><strong>本ソフトウェアのご利用には有償ライセンスが必要です。</strong></p>
-              <p>評価版をダウンロード後、正式にご利用いただくには、下記までお問い合わせください。</p>
-              <div class="license-contact">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                  <polyline points="22,6 12,13 2,6"/>
-                </svg>
-                <a href="mailto:diegoalonsojapan@gmail.com" class="contact-email">diegoalonsojapan@gmail.com</a>
-              </div>
-              <p class="license-pricing">
-                <strong>価格:</strong> 初期導入費用 ¥80,000/台（買い切り）+ 保守/メンテナンス費用 月額¥10,000〜
-                <a href="index.html#pricing">詳しい価格を見る</a>
+            <ol class="steps">
+              <li>
+                <h3>PCに合うファイルを入手</h3>
+                <p>
+                  Windowsはセットアップ、Macは対応するチップのDMGを選びます。
+                </p>
+              </li>
+              <li>
+                <h3>インストール</h3>
+                <p>
+                  Windowsはインストーラーに従って進めます。MacはDMGを開き、WildCatcher.appを「アプリケーション」にコピーします。
+                </p>
+              </li>
+              <li>
+                <h3>少量のコピーで試す</h3>
+                <p>
+                  使用許諾を確認して起動。必要なモデルと設定を確認し、まずは元データのコピーで検出・結果確認・出力を試してください。
+                </p>
+              </li>
+            </ol>
+            <a class="button secondary" href="docs.html"
+              >使い方ガイドへ<span aria-hidden="true"> →</span></a
+            >
+          </div>
+          <div>
+            <h3>インストール時の確認</h3>
+            <p>
+              OSのセキュリティ確認が表示される場合があります。Mac版はApple
+              Developer
+              IDによる署名・公証が未設定です。管理対象のPCでは、ご利用組織の担当者にインストール可否をご確認ください。
+            </p>
+            <p>
+              Mac
+              2.2.0では、動画再生のためにVLCを別途インストールする必要はありません。
+            </p>
+            <div class="notice">
+              <h3>すでにご利用中の方</h3>
+              <p>
+                <strong>2.1.3以降：</strong>アプリ右上の「更新」または「About →
+                更新の確認」から更新できます。
+              </p>
+              <p>
+                <strong>2.1.0 / 2.1.1：</strong
+                >旧版の更新機能に不具合があるため、このページの最新版を一度インストールしてください。
+              </p>
+              <p class="small">
+                更新前に、ライセンス、モデル、設定、解析結果と元データのバックアップをおすすめします。
               </p>
             </div>
           </div>
-          
-          <!-- DEPRECATED WARNING -->
-          <div class="deprecated-warning-box">
-            <div class="dep-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-                <line x1="12" y1="9" x2="12" y2="13"/>
-                <line x1="12" y1="17" x2="12.01" y2="17"/>
-              </svg>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrap">
+          <h2>ZIP形式とダウンロードの検証</h2>
+          <p>
+            アプリ内更新で利用するZIPパッケージも配布しています。以下のSHA-256は、2.2.0の各ZIPファイルに対応します。上のEXE・DMGとは異なります。
+          </p>
+          <details class="checksums">
+            <summary>ZIPのリンクとSHA-256を表示</summary>
+            <p>
+              <a
+                href="https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.0/WildCatcher-Windows-x64.zip"
+                >Windows x64 ZIP · 約785 MB</a
+              >
+            </p>
+            <code
+              >d4129ea502effa70022794c6af0597d23c50374428798786e9bd3885bb474fbf</code
+            >
+            <p>
+              <a
+                href="https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.0/WildCatcher-macOS-arm64.zip"
+                >macOS Apple Silicon ZIP · 約700 MB</a
+              >
+            </p>
+            <code
+              >474af5ff7fb4d1635fcd7fb3af944011a2c9dadd68783f3db35cca31829a8d74</code
+            >
+            <p>
+              <a
+                href="https://github.com/Theego99/WildCatcher-releases/releases/download/v2.2.0/WildCatcher-macOS-x64.zip"
+                >macOS Intel ZIP · 約802 MB</a
+              >
+            </p>
+            <code
+              >0c7f6a6ae5069d360f491d148eb552590d1c34c956a062dab254b79e743694f6</code
+            >
+          </details>
+          <p class="hero-note">
+            プログラム本体は上記のインストーラーまたはアプリパッケージをご利用ください。GitHubが自動生成する「Source
+            code」はアプリ本体ではありません。
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrap">
+          <div class="cta">
+            <div>
+              <h2>導入前に確認したいことがありますか？</h2>
+              <p>
+                PC環境、ライセンス、評価利用、見積書についてご相談ください。
+              </p>
             </div>
-            <div class="dep-content">
-              <h3>このバージョンは非推奨です</h3>
-              <p>下記のダウンロードは<strong>旧ベータ版</strong>です。現在は大幅に機能強化された新バージョンが稼働中ですが、直接配布はしておりません。</p>
-              <p><strong>最新版をご希望の場合は、開発者へ直接ご連絡ください：</strong></p>
-              <a href="mailto:diegoalonsojapan@gmail.com" class="btn btn-primary btn-lg dep-contact-btn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                  <polyline points="22,6 12,13 2,6"/>
-                </svg>
-                diegoalonsojapan@gmail.com へ問い合わせる
-              </a>
-              <p class="dep-note">最新版では：種判別モデル18種・95%+精度、GPUアクセラレーション、CSV分析レポート、フォルダ構造ミラーリング、などが利用可能です。</p>
-            </div>
-          </div>
-
-
-          <div class="download-card deprecated-card">
-            <div class="download-info">
-              <div class="download-version">
-                <h3>Version 2.0</h3>
-                <span class="version-badge" style="background: #5a3a00; color: #f0a500; border: 1px solid #f0a500;">旧ベータ版</span>
-              </div>
-              <div class="download-details">
-                <div class="detail-item">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                    <line x1="8" y1="21" x2="16" y2="21"/>
-                    <line x1="12" y1="17" x2="12" y2="21"/>
-                  </svg>
-                  <div>
-                    <strong>対応OS</strong>
-                    <p>Windows 10/11, macOS (Intel/Apple Silicon)</p>
-                  </div>
-                </div>
-                <div class="detail-item">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                    <polyline points="7 10 12 15 17 10"/>
-                    <line x1="12" y1="15" x2="12" y2="3"/>
-                  </svg>
-                  <div>
-                    <strong>ファイル形式</strong>
-                    <p>ZIP アーカイブ</p>
-                  </div>
-                </div>
-                <div class="detail-item">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                  </svg>
-                  <div>
-                    <strong>SHA256</strong>
-                    <p class="hash">公開ビルドに合わせて更新</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="download-action">
-              <a class="btn btn-deprecated-dl btn-lg download-btn" href="https://github.com/Theego99/WildCatcherWeb/releases/download/v2.0.0/WildCatcher_v2.zip">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                  <polyline points="7 10 12 15 17 10"/>
-                  <line x1="12" y1="15" x2="12" y2="3"/>
-                </svg>
-                ⚠️ 旧ベータ版をダウンロード (ZIP)
-              </a>
-              <p class="download-note" style="color: #f0a500; font-weight: 600;">※ これは廃止された旧ベータ版です。最新版は <a href="mailto:diegoalonsojapan@gmail.com" style="color: #f0a500; text-decoration: underline;">開発者へ直接お問い合わせ</a> ください。</p>
-            </div>
-          </div>
-
-          <div class="features-quick-list">
-            <h3>主な機能</h3>
-            <div class="quick-features">
-              <div class="quick-feature">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <span>AI自動検出 (人/車/動物)</span>
-              </div>
-              <div class="quick-feature">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <span>完全オフライン動作</span>
-              </div>
-              <div class="quick-feature">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <span>メディア整理自動化</span>
-              </div>
-              <div class="quick-feature">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <span>統合動画プレーヤー</span>
-              </div>
-              <div class="quick-feature">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <span>種判別モデル (近日実装)</span>
-              </div>
-              <div class="quick-feature">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <span>カスタムモデル対応</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="system-requirements">
-            <h3>推奨システム要件</h3>
-            <div class="requirements-grid">
-              <div class="requirement-item">
-                <strong>OS</strong>
-                <p>Windows 10 (64-bit) 以降<br>macOS 11.0 以降</p>
-              </div>
-              <div class="requirement-item">
-                <strong>プロセッサ</strong>
-                <p>Intel Core i5 以上<br>Apple M1 以上推奨</p>
-              </div>
-              <div class="requirement-item">
-                <strong>メモリ</strong>
-                <p>8GB RAM 以上<br>(16GB 推奨)</p>
-              </div>
-              <div class="requirement-item">
-                <strong>ストレージ</strong>
-                <p>500MB 以上の空き容量<br>(データ保存用に追加容量必要)</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="getting-started">
-            <h3>使い始めるには</h3>
-            <ol class="start-steps">
-              <li>
-                <strong>ダウンロード</strong>
-                <p>上記のボタンからZIPファイルをダウンロード</p>
-              </li>
-              <li>
-                <strong>解凍</strong>
-                <p>ダウンロードしたZIPファイルを解凍</p>
-              </li>
-              <li>
-                <strong>起動</strong>
-                <p>WildCatcherアプリケーションを起動</p>
-              </li>
-              <li>
-                <strong>設定</strong>
-                <p>初回起動時に基本設定を行い、すぐに使用開始</p>
-              </li>
-            </ol>
-            <a href="docs.html" class="btn btn-outline-primary">詳しい使い方を見る</a>
-          </div>
-
-          <div class="creator-info">
-            <p><strong>Creator / 開発者:</strong> Diego Alonso Cañizares</p>
+            <a
+              class="button"
+              href="mailto:diegoalonsojapan@gmail.com?subject=WildCatcher%20%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%83%BB%E5%B0%8E%E5%85%A5%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B"
+              >お問い合わせ<span aria-hidden="true"> ↗</span></a
+            >
           </div>
         </div>
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <img src="assets/logo.png" alt="WildCatcher" class="footer-logo">
-          <h3>WildCatcher</h3>
-          <p>完全オフライン動作のAI野生動物調査ソフトウェア</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-column">
-            <h4>製品</h4>
-            <ul>
-              <li><a href="index.html#features">特徴</a></li>
-              <li><a href="index.html#advantages">優位性</a></li>
-              <li><a href="index.html#ai-performance">AI性能</a></li>
-              <li><a href="index.html#pricing">価格</a></li>
-            </ul>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <div>
+            <a class="brand" href="index.html">WildCatcher</a>
+            <p>カメラトラップの解析から、結果の確認まで。</p>
           </div>
-          <div class="footer-column">
-            <h4>リソース</h4>
-            <ul>
-              <li><a href="docs.html">ドキュメント</a></li>
-              <li><a href="download.html">ダウンロード</a></li>
-              <li><a href="index.html#showcase">導入実績</a></li>
-            </ul>
+          <div class="footer-links">
+            <a href="index.html">ホーム</a><a href="index.html#features">機能</a
+            ><a href="index.html#pricing">導入・料金</a
+            ><a href="docs.html">使い方</a
+            ><a href="download.html" aria-current="page">ダウンロード</a>
           </div>
-          <div class="footer-column">
-            <h4>開発者</h4>
-            <ul>
-              <li><strong>Diego Alonso Cañizares</strong></li>
-            </ul>
+          <div class="footer-links">
+            <a href="https://www.recorta.jp/">合同会社ReCorta</a
+            ><a href="https://www.wildcatcher.jp/">WildCatcher</a
+            ><a href="https://www.recorta.jp/service.html#wildpass"
+              >Wildpass · 開発中</a
+            ><a href="mailto:diegoalonsojapan@gmail.com">お問い合わせ</a>
           </div>
         </div>
+        <div class="footer-bottom">
+          <span>© 2026 合同会社ReCorta</span
+          ><span>東京都西東京市 · 2026年9月9日設立</span>
+        </div>
       </div>
-      <div class="footer-bottom">
-        <p>© 2025 WildCatcher. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js?v=2.0"></script>
-</body>
+    </footer>
+  </body>
 </html>
