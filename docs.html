@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>使い方ガイド | WildCatcher Windows 2.2.4・Mac 2.2.1</title>
+    <title>使い方ガイド | WildCatcher 2.2.5（Windows・Mac）</title>
     <meta
       name="description"
-      content="WildCatcherの準備・検出・結果確認・修正・出力を案内。Windows 2.2.4・Mac 2.2.1の更新方法、プレビュー、オフライン解析、ライセンス、よくある質問。"
+      content="WildCatcherの準備・検出・結果確認・修正・出力を案内。2.2.5（Windows・Mac）の更新方法、プレビュー、オフライン解析、ライセンス、よくある質問。"
     />
     <link rel="canonical" href="https://www.wildcatcher.jp/docs.html" />
     <meta name="theme-color" content="#10291f" />
     <link rel="icon" href="assets/logo.png" type="image/png" />
-    <link rel="stylesheet" href="css/styles.css?v=20260912" />
+    <link rel="stylesheet" href="css/styles.css?v=20261004" />
     <script src="js/main.js?v=20260912" defer></script>
     <script type="application/ld+json">
       {
@@ -20,7 +20,7 @@
           {
             "@type": "SoftwareApplication",
             "name": "WildCatcher",
-            "softwareVersion": "2.2.4",
+            "softwareVersion": "2.2.5",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Windows",
             "url": "https://www.wildcatcher.jp/",
@@ -34,7 +34,7 @@
           {
             "@type": "SoftwareApplication",
             "name": "WildCatcher",
-            "softwareVersion": "2.2.1",
+            "softwareVersion": "2.2.5",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "macOS",
             "url": "https://www.wildcatcher.jp/",
@@ -77,7 +77,7 @@
     </header>
     <main id="main">
       <header class="page-intro wrap">
-        <p class="eyebrow">Guide · Windows 2.2.4 / Mac 2.2.1</p>
+        <p class="eyebrow">Guide · Windows 2.2.5 / Mac 2.2.5</p>
         <h1>撮影データから、<br />確認済みの結果へ。</h1>
         <p class="lead">
           はじめて使う方のためのガイドです。少量のサンプルで設定と出力を確認してから、本番の解析に進んでください。
@@ -152,14 +152,14 @@
               <summary>更新の方法は？</summary>
               <p>
                 Windows
-                2.2.0以降はアプリ内の「更新」から2.2.4へ更新できます。旧バージョンや手動導入には、<a
+                2.2.0以降はアプリ内の「更新」から2.2.5へ更新できます。旧バージョンや手動導入には、<a
                   href="download.html"
                   >最新のインストーラーまたはZIP</a
-                >をご利用ください。Mac版は2.2.1を提供しています。
+                >をご利用ください。Mac版は2.2.5を提供しています。
               </p>
             </details>
             <details>
-              <summary>Windows 2.2.4で画像・動画を確認するには？</summary>
+              <summary>画像・動画を確認するには？</summary>
               <p>
                 フォルダー選択画面でファイルを確認できます。アプリ内で画像・動画を選ぶとプレビューを表示し、画像はダブルクリックで拡大、動画は「動画を再生」またはダブルクリックで開けます。
               </p>
@@ -170,13 +170,13 @@
             <details>
               <summary>MacでVLCは必要ですか？</summary>
               <p>
-                2.2.1のMac版はネイティブ動画再生に対応しているため、別途VLCをインストールする必要はありません。
+                2.2.5のMac版はネイティブ動画再生に対応しているため、別途VLCをインストールする必要はありません。
               </p>
             </details>
             <details>
               <summary>コマンドラインでも使えますか？</summary>
               <p>
-                2.2.4のWindows配布にはCLIを同梱しています。定期処理や大量データへの導入は、必要な設定と出力内容を確認したうえでご相談ください。
+                Windows・Macの2.2.5にはCLIを同梱しています。定期処理や大量データへの導入は、必要な設定と出力内容を確認したうえでご相談ください。
               </p>
             </details>
             <div class="notice">
@@ -191,6 +191,26 @@
               >
             </div>
           </aside>
+        </div>
+      </section>
+      <section id="output-columns" class="section alt">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Output profiles · 2.2.5</p>
+            <h2>必要な列を、必要な順序で。</h2>
+            <p>CSV・Excelの列名、並び順、後で記入する空欄を、調査の様式に合わせて設定できます。Windows・Macともにご利用いただけます。</p>
+          </div>
+          <ol class="steps">
+            <li><h3>出力する情報を選ぶ</h3><p>「出力設定」でExcel・CSVを選び、「情報を選ぶ…」からファイル名、撮影日時、検出結果などを追加します。検索で必要な項目を探せます。</p></li>
+            <li><h3>列の順序と名前を整える</h3><p>行をドラッグするか「上へ・下へ」で並べ替えます。列名はダブルクリック、または「列名を編集」で変更できます。「列を外す」で不要な項目を外せます。</p></li>
+            <li><h3>後で記入する列を追加する</h3><p>「空の列を追加…」で「確認者」「確認後の種名」「行動メモ」などを作成します。出力された行ではその列は空欄になり、Excelなどで記入できます。プレビューと「サンプルを Excel / CSV で保存…」で構成を確認してください。サンプルは解析結果ではありません。</p></li>
+            <li><h3>プロファイルに保存して再利用する</h3><p>「設定の保存」で構成に名前を付けて保存します。出力形式・選択した列・並び順・変更した列名・空の列が保存され、読込み時に復元されます。起動時に自動で読み込む設定や、同じプロファイルを使ったCLI処理にも対応します。</p></li>
+          </ol>
+          <figure>
+            <img src="assets/output-columns-225.png" alt="出力列エディターの例。ファイル名・撮影日時の後に、確認者・確認後の種名・備考の空欄を配置し、下部でCSV・Excelの列構成をプレビューしています。" width="1000" height="930" loading="lazy" />
+            <figcaption class="small">列の構成例です。表示されているファイル名と日時はサンプルデータです。</figcaption>
+          </figure>
+          <p class="small">この列名・順序はCSV・Excelに反映されます。JSON・SQLiteの標準項目は従来のキーを使い、PDF・外部ツール向け形式は専用の構成を維持します。</p>
         </div>
       </section>
       <section class="section alt">
@@ -210,13 +230,13 @@
               </p>
               <a
                 class="text-link"
-                href="https://github.com/Theego99/WildCatcher-releases/releases/tag/v2.2.4"
-                >Windows 2.2.4 →</a
+                href="https://github.com/Theego99/WildCatcher-releases/releases/tag/v2.2.5"
+                >Windows 2.2.5 →</a
               >
               <a
                 class="text-link"
-                href="https://github.com/Theego99/WildCatcher-releases/releases/tag/v2.2.1"
-                >Mac 2.2.1 →</a
+                href="https://github.com/Theego99/WildCatcher-releases/releases/tag/v2.2.5"
+                >Mac 2.2.5 →</a
               >
             </article>
             <article class="card">
@@ -235,7 +255,7 @@
               <p lang="en">
                 Reference document for an earlier version (Word). For current
                 installation and update information, use the bilingual release
-                notes for Windows 2.2.4 or Mac 2.2.1.
+                notes for Windows 2.2.5 or Mac 2.2.5.
               </p>
               <a
                 class="text-link"

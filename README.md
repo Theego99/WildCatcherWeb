@@ -14,7 +14,7 @@ Shared presentation and accessible navigation are in `css/styles.css` and `js/ma
 
 ## Release maintenance
 
-The site currently describes **Windows 2.2.4**, released September 27, 2026, and **macOS 2.2.1** for both Apple Silicon and Intel. Platform versions are shown separately in download cards and SoftwareApplication metadata. Download links, decimal MB file sizes, and ZIP SHA-256 values were checked against the public [2.2.4 release](https://github.com/Theego99/WildCatcher-releases/releases/tag/v2.2.4), [2.2.1 Mac assets](https://github.com/Theego99/WildCatcher-releases/releases/tag/v2.2.1), and [update manifest](https://raw.githubusercontent.com/Theego99/WildCatcher-releases/main/version.json). Application source is maintained separately; this repository contains the website only.
+The site describes **WildCatcher 2.2.5** for Windows x64, macOS Apple Silicon and macOS Intel, released October 4, 2026. Download links, decimal MB file sizes and ZIP SHA-256 values correspond to the public [2.2.5 release](https://github.com/Theego99/WildCatcher-releases/releases/tag/v2.2.5) and [update manifest](https://raw.githubusercontent.com/Theego99/WildCatcher-releases/main/version.json). Application source is maintained separately; this repository contains the website only.
 
 When publishing another app version, update download links, file sizes, checksums, release notes links, visible version labels, and SoftwareApplication metadata together. The fallback “latest release” link leads to the release channel. Do not use GitHub's automatically generated source archive as the application download.
 
